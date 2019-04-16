@@ -5,7 +5,7 @@ import './Movie.css';
 class Movie extends Component{
 
     static propTypes = {
-        title : PropTypes.number.isRequired,
+        title : PropTypes.string,
         poster : PropTypes.string
     }
 
