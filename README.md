@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 yarn add react-lines-ellipsis
 
+# test
+
+branch-test
+
 ## Available Scripts
 
 In the project directory, you can run:
