@@ -9,6 +9,7 @@ class App extends Component {
   state = {};
 
   componentDidMount() {
+    this._callTest();
     this._getMovies();
   }
 
@@ -33,6 +34,15 @@ class App extends Component {
       movies
     });
   };
+
+  _callTest = () => {
+    return fetch(
+      "http://localhost:8282/SkyBlue/basicInfo/searchCompany.do?method=searchCompanyList"
+    )
+    .then(test => test.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(err));
+  }
 
   _callApi = () => {
     return fetch(
