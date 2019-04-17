@@ -9,6 +9,7 @@ class App extends Component {
   state = {};
 
   componentDidMount() {
+    alert('test');
     this._callTest();
     this._getMovies();
   }
