@@ -9,7 +9,7 @@ class App extends Component {
   state = {};
 
   componentDidMount() {
-    alert('test');
+    alert('qwer');
     this._callTest();
     this._getMovies();
   }
@@ -38,8 +38,8 @@ class App extends Component {
 
   _callTest = () => {
     return fetch(
-      "http://localhost:8282/SkyBlue/basicInfo/searchCompany.do?method=searchCompanyList"
-    )
+      "http://localhost:8282/unicompany/base/findEmployeeList.do"
+      )
     .then(test => test.json())
     .then(json => console.log(json))
     .catch(err => console.log(err));
